@@ -83,6 +83,51 @@
     });
   }
 
+  /* ---------- Hero parallax ---------- */
+  var heroArt = document.querySelector('.hero .hero-art');
+  if (heroArt && !prefersReducedMotion) {
+    var ticking = false;
+    var parallax = function () {
+      heroArt.style.transform = 'translate3d(0,' + (window.scrollY * 0.22) + 'px,0)';
+      ticking = false;
+    };
+    window.addEventListener('scroll', function () {
+      if (!ticking) { requestAnimationFrame(parallax); ticking = true; }
+    }, { passive: true });
+  }
+
+  /* ---------- 3D tilt on media cards ---------- */
+  var canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (canHover && !prefersReducedMotion) {
+    document.querySelectorAll('.work-card, .feature-media, .insta-tile').forEach(function (el) {
+      el.setAttribute('data-tilt', '');
+      var glare = document.createElement('span');
+      glare.className = 'tilt-glare';
+      glare.setAttribute('aria-hidden', 'true');
+      el.appendChild(glare);
+      var rect = null;
+      el.addEventListener('pointerenter', function () {
+        rect = el.getBoundingClientRect();
+        el.classList.add('is-tilting');
+      });
+      el.addEventListener('pointermove', function (e) {
+        if (!rect) rect = el.getBoundingClientRect();
+        var px = (e.clientX - rect.left) / rect.width;
+        var py = (e.clientY - rect.top) / rect.height;
+        var rx = (0.5 - py) * 7;
+        var ry = (px - 0.5) * 9;
+        el.style.transform = 'perspective(900px) rotateX(' + rx.toFixed(2) + 'deg) rotateY(' + ry.toFixed(2) + 'deg) translateY(-4px)';
+        el.style.setProperty('--gx', (px * 100).toFixed(1) + '%');
+        el.style.setProperty('--gy', (py * 100).toFixed(1) + '%');
+      });
+      el.addEventListener('pointerleave', function () {
+        el.classList.remove('is-tilting');
+        el.style.transform = '';
+        rect = null;
+      });
+    });
+  }
+
   /* ---------- Marquee: duplicate track content for seamless loop ---------- */
   document.querySelectorAll('[data-marquee]').forEach(function (track) {
     track.innerHTML += track.innerHTML;

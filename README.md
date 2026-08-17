@@ -51,9 +51,18 @@ Assets: `assets/css/main.css` (design system) · `assets/js/main.js` (nav, revea
 before/after, filters) · `assets/js/quote.js` (stepper) · `assets/img/*.svg`
 (stylized vehicle scene library + logos) · `assets/fonts/*` (self-hosted).
 
-All vehicle imagery is a **stylized SVG scene library** (~4 KB each) sharing one cinematic
-art direction — deliberately labeled as placeholders for real project photography, which
-should replace/join it after launch (shoot per the photography direction on `brand.html`).
+Vehicle imagery is **real automotive photography** sourced from Unsplash under the
+[Unsplash License](https://unsplash.com/license) (free for commercial use, no attribution
+required — attribution appreciated). Each image is labeled on-site as *Sample* imagery and
+should be replaced with real UltraWrap Studio project photography over time (shoot per the
+photography direction on `brand.html`). Source photo IDs are preserved in the filenames'
+git history; all files live in `assets/img/*.webp`. A small stylized SVG scene library
+remains for the Cybertruck and interior *concept* slots and the brand-page vehicle mockup.
+
+The visual system is dimensional by design: parallax hero with a perspective grid floor,
+pointer-tracked 3D tilt with glare on media cards (hover-capable devices only), layered
+glass card surfaces with `backdrop-filter`, metallic gradient display type, and photographic
+grade overlays — all CSS/vanilla-JS, all disabled under `prefers-reduced-motion`.
 
 ## SEO
 
