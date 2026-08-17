@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Stylized studio rendering (placeholder for project photography)">
+  <defs>
+    <radialGradient id="glow" cx="52%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#4a3f28" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#4a3f28" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0a0a0c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bgv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101114"/>
+      <stop offset="72%" stop-color="#0b0c0e"/>
+      <stop offset="100%" stop-color="#08090a"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#17181c"/>
+      <stop offset="100%" stop-color="#0a0a0c"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcbe78"/>
+      <stop offset="55%" stop-color="#a8894c"/>
+      <stop offset="100%" stop-color="#6b5730"/>
+    </linearGradient>
+    <radialGradient id="rim" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#3b3e43"/>
+      <stop offset="70%" stop-color="#1a1c1f"/>
+      <stop offset="100%" stop-color="#0c0d0f"/>
+    </radialGradient>
+    <linearGradient id="rimlight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffe9bd" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#ffe9bd" stop-opacity="0.9"/>
+      <stop offset="75%" stop-color="#ffe9bd" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffe9bd" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgv)"/>
+  <rect width="1200" height="675" fill="url(#glow)"/>
+  <rect y="578" width="1200" height="97" fill="url(#floor)"/>
+  <line x1="0" y1="578" x2="1200" y2="578" stroke="#26282e" stroke-width="1"/>
+<ellipse cx="610" cy="580" rx="380" ry="22" fill="url(#shadow)"/>
+  <g>
+    <circle cx="400" cy="502" r="74" fill="none" stroke="#0b0c0d" stroke-width="24"/>
+    <circle cx="400" cy="502" r="74" fill="none" stroke="#26282e" stroke-width="2"/>
+    <circle cx="400" cy="502" r="38" fill="url(#rim)"/>
+    <circle cx="828" cy="502" r="74" fill="none" stroke="#0b0c0d" stroke-width="24"/>
+    <circle cx="828" cy="502" r="74" fill="none" stroke="#26282e" stroke-width="2"/>
+    <circle cx="828" cy="502" r="38" fill="url(#rim)"/>
+    <path d="M400 502 L508 402" stroke="#2a2d31" stroke-width="14" stroke-linecap="round"/>
+    <path d="M400 502 L508 402" stroke="#43464c" stroke-width="4" stroke-linecap="round"/>
+    <path d="M700 486 L828 502" stroke="#2a2d31" stroke-width="14" stroke-linecap="round"/>
+    <path d="M340 430 A 78 78 0 0 1 456 424" fill="none" stroke="#1e2024" stroke-width="12" stroke-linecap="round"/>
+    <path fill="url(#body)" d="M498 428 L560 392 L688 386 L718 424 L664 448 L524 450 Z"/>
+    <path fill="url(#body)" d="M664 448 L718 424 L826 408 L872 380 L888 392 L850 444 L748 462 Z"/>
+    <path fill="#131418" d="M524 450 L664 448 L716 470 L694 512 L570 514 L506 482 Z"/>
+    <path fill="none" stroke="url(#rimlight)" stroke-width="3" stroke-linecap="round" d="M500 424 L560 390 L688 384 L826 406 L872 378"/>
+    <path d="M508 402 L470 366" stroke="#2a2d31" stroke-width="8" stroke-linecap="round"/>
+    <path d="M470 366 L444 372" stroke="#43464c" stroke-width="6" stroke-linecap="round"/>
+    <path d="M694 512 L740 540 L790 540" stroke="#1a1c1f" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <circle cx="400" cy="502" r="7" fill="#ffe9bd" opacity="0.9"/>
+    <circle cx="828" cy="502" r="7" fill="#ffe9bd" opacity="0.9"/>
+  </g>
+</svg>

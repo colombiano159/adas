@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Stylized studio rendering (placeholder for project photography)">
+  <defs>
+    <radialGradient id="glow" cx="52%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#2a2d31" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#2a2d31" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0a0a0c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bgv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101114"/>
+      <stop offset="72%" stop-color="#0b0c0e"/>
+      <stop offset="100%" stop-color="#08090a"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#17181c"/>
+      <stop offset="100%" stop-color="#0a0a0c"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#33363b"/>
+      <stop offset="55%" stop-color="#17181b"/>
+      <stop offset="100%" stop-color="#0b0c0d"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b2e33"/>
+      <stop offset="100%" stop-color="#101215"/>
+    </linearGradient>
+    <radialGradient id="rim" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#3b3e43"/>
+      <stop offset="70%" stop-color="#1a1c1f"/>
+      <stop offset="100%" stop-color="#0c0d0f"/>
+    </radialGradient>
+    <linearGradient id="rimlight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c9a962" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#c9a962" stop-opacity="0.9"/>
+      <stop offset="75%" stop-color="#c9a962" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#c9a962" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgv)"/>
+  <rect width="1200" height="675" fill="url(#glow)"/>
+  <rect y="578" width="1200" height="97" fill="url(#floor)"/>
+  <line x1="0" y1="578" x2="1200" y2="578" stroke="#26282e" stroke-width="1"/>
+<ellipse cx="600" cy="580" rx="470" ry="26" fill="url(#shadow)"/>
+  <g>
+    <path fill="url(#body)" d="M140 520 C146 492 170 468 240 452 C300 440 360 432 430 424 C480 417 520 388 590 366 C660 346 760 344 830 358 C900 372 950 396 1000 420 C1050 440 1075 470 1078 492 C1080 508 1072 520 1055 520 L985 520 A64 64 0 0 0 857 520 L475 520 A64 64 0 0 0 347 520 L140 520 Z"/>
+    <path fill="url(#glass)" d="M596 378 C656 358 752 355 822 369 C868 379 906 398 942 418 C862 414 740 411 664 409 C640 399 616 389 596 378 Z"/>
+    <path fill="none" stroke="url(#rimlight)" stroke-width="3" stroke-linecap="round" d="M240 452 C300 440 360 432 430 424 C480 417 520 388 590 366 C660 346 760 344 830 358 C900 372 950 396 1000 420"/>
+    <path fill="none" stroke="#000" stroke-opacity="0.25" stroke-width="2" d="M430 424 C480 417 520 388 590 366"/>
+    <path d="M150 486 L215 478 L212 490 L152 496 Z" fill="#c9a962" opacity="0.55"/>
+    <path d="M1046 470 L1076 486 L1074 498 L1050 492 Z" fill="#8a1c1c" opacity="0.8"/>
+    <g>
+      <circle cx="411" cy="520" r="57" fill="#0b0c0d" stroke="#26282e" stroke-width="2"/>
+      <circle cx="411" cy="520" r="36" fill="url(#rim)"/>
+      <g stroke="#43464c" stroke-width="4" stroke-linecap="round">
+        <line x1="411" y1="520" x2="411" y2="489"/><line x1="411" y1="520" x2="440" y2="510"/>
+        <line x1="411" y1="520" x2="429" y2="546"/><line x1="411" y1="520" x2="393" y2="546"/>
+        <line x1="411" y1="520" x2="382" y2="510"/>
+      </g>
+      <circle cx="411" cy="520" r="6" fill="#c9a962" opacity="0.9"/>
+    </g>
+    <g>
+      <circle cx="921" cy="520" r="57" fill="#0b0c0d" stroke="#26282e" stroke-width="2"/>
+      <circle cx="921" cy="520" r="36" fill="url(#rim)"/>
+      <g stroke="#43464c" stroke-width="4" stroke-linecap="round">
+        <line x1="921" y1="520" x2="921" y2="489"/><line x1="921" y1="520" x2="950" y2="510"/>
+        <line x1="921" y1="520" x2="939" y2="546"/><line x1="921" y1="520" x2="903" y2="546"/>
+        <line x1="921" y1="520" x2="892" y2="510"/>
+      </g>
+      <circle cx="921" cy="520" r="6" fill="#c9a962" opacity="0.9"/>
+    </g>
+  </g>
+</svg>

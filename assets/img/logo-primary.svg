@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 44" role="img" aria-label="UltraWrap Studio logo">
+  <g transform="translate(2,5)">
+    <path fill="none" stroke="#f4f1ea" stroke-width="3.2" d="M4 2 V19 L12.5 29 L21 19 V2"/>
+    <path fill="none" stroke="#c9a962" stroke-width="3.2" d="M23 2 L28 29 L33.5 13 L39 29 L44 2"/>
+  </g>
+  <text x="60" y="24" font-family="Archivo, system-ui, sans-serif" font-weight="760" font-size="19" letter-spacing="1.6" fill="#f4f1ea">ULTRAWRAP</text>
+  <text x="61" y="38" font-family="Archivo, system-ui, sans-serif" font-weight="540" font-size="9" letter-spacing="7.5" fill="#c9a962">STUDIO</text>
+</svg>
